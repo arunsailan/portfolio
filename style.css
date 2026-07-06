@@ -97,3 +97,11 @@ footer {
 .button:active {
   color: white;
 }
+
+.intro {
+    max-width: 800px;
+    margin: 30px auto;
+    font-size: 22px;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
