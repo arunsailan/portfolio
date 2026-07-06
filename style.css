@@ -99,9 +99,9 @@ footer {
 }
 
 .intro {
-    max-width: 800px;
+    max-width: 700px;
     margin: 30px auto;
-    font-size: 22px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.8;
     color: #cbd5e1;
 }
