@@ -110,7 +110,9 @@ nav {
   left: 0;
   right: 0;
   z-index: 1000;
+
   margin: 0;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,7 +120,9 @@ nav {
   padding: 24px 90px;
   box-sizing: border-box;
 
-  background: #111827;
+  background: rgba(17, 24, 39, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(96, 165, 250, 0.12);
 }
 
 .logo {
