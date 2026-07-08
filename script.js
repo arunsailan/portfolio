@@ -17,14 +17,14 @@ window.addEventListener("scroll", () => {
     let current = "";
 
     sections.forEach((section) => {
-        const sectionTop = section.getBoundingClientRect().top;
-        const sectionHeight = section.offsetHeight;
+    const sectionTop = section.getBoundingClientRect().top;
+    const sectionHeight = section.offsetHeight;
+    const triggerPoint = window.innerHeight / 2;
 
-        if (sectionTop <= 180 && sectionTop + sectionHeight > 180) {
-            current = section.getAttribute("id");
-        }
-    });
-
+    if (sectionTop <= triggerPoint && sectionTop + sectionHeight > triggerPoint) {
+        current = section.getAttribute("id");
+    }
+});
     navLinks.forEach((link) => {
         link.classList.remove("active");
 
