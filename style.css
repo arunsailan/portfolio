@@ -433,3 +433,23 @@ nav {
   color: #cbd5e1;
   font-size: 14px;
 }
+
+.contact-card,
+.contact-card:visited {
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.contact-card:hover,
+.contact-card:active {
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.contact-card p,
+.contact-card p:visited,
+.contact-card strong,
+.contact-card strong:visited {
+  color: inherit;
+  text-decoration: none;
+}
