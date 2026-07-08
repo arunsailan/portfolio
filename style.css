@@ -60,9 +60,15 @@ h3 {
 
 footer {
   text-align: center;
-  padding: 25px;
-  background: #111827;
+  padding: 30px 20px;
+  background: #0f172a;
   color: #9ca3af;
+  font-size: 14px;
+  border-top: 1px solid rgba(96, 165, 250, 0.12);
+}
+
+footer p {
+  margin: 6px 0;
 }
 
 .buttons {
