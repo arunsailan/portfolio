@@ -187,6 +187,8 @@ nav {
         0 0 40px rgba(96,165,250,0.15);
 
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-image img:hover {
@@ -200,11 +202,12 @@ nav {
 }
 
 .status-pulse {
-    width: 12px;
-    height: 12px;
-    background-color: #60a5fa;
-    border-radius: 50%;
-    position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #60a5fa;
+  border-radius: 50%;
+  position: relative;
+  opacity: 0.85;
 }
 
 .status-pulse::after {
@@ -246,21 +249,16 @@ nav {
 }
 
 .hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
 .photo-pulse {
   position: absolute;
-  bottom: 18px;
-  right: 110px;
-  width: 38px;
-  height: 38px;
-  background: rgba(15, 23, 42, 0.85);
-  border: 1px solid rgba(96, 165, 250, 0.35);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 0 25px rgba(96, 165, 250, 0.35);
+  bottom: -25px;
+  right: -25px;
+  z-index: 1;
 }
