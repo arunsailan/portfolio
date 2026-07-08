@@ -508,57 +508,72 @@ nav {
 }
 
 .shield-logo {
-  position: relative;
-  width: 64px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 60px;
+    cursor: pointer;
 }
 
 .logo-text {
-  position: relative;
-  z-index: 3;
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: #e5e7eb;
-  transition: all 0.3s ease;
+    position: relative;
+    z-index: 3;
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
 }
 
 .shield-half {
-  position: absolute;
-  width: 30px;
-  height: 42px;
-  border: 2px solid #60a5fa;
-  opacity: 0;
-  transition: all 0.35s ease;
+    position: absolute;
+    width: 28px;
+    height: 42px;
+    border: 3px solid #60a5fa;
+    opacity: 0;
+    transition: all 0.35s ease;
 }
 
 .shield-left {
-  left: -18px;
-  border-right: none;
-  border-radius: 22px 0 0 22px;
+    left: -25px;
+
+    border-right: none;
+
+    clip-path: polygon(
+        100% 0%,
+        25% 0%,
+        0% 50%,
+        25% 100%,
+        100% 100%
+    );
 }
 
 .shield-right {
-  right: -18px;
-  border-left: none;
-  border-radius: 0 22px 22px 0;
+    right: -25px;
+
+    border-left: none;
+
+    clip-path: polygon(
+        0% 0%,
+        75% 0%,
+        100% 50%,
+        75% 100%,
+        0% 100%
+    );
 }
 
 .shield-logo:hover .shield-left {
-  left: 4px;
-  opacity: 1;
+    left: 4px;
+    opacity: 1;
 }
 
 .shield-logo:hover .shield-right {
-  right: 4px;
-  opacity: 1;
+    right: 4px;
+    opacity: 1;
 }
 
 .shield-logo:hover .logo-text {
-  color: #ffffff;
-  text-shadow: 0 0 14px rgba(96, 165, 250, 0.8);
+    text-shadow: 0 0 18px rgba(96,165,250,0.8);
 }
