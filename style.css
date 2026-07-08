@@ -122,8 +122,7 @@ nav {
   padding: 24px 90px;
   box-sizing: border-box;
 
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(12px);
+  background: #111827;
 }
 
 .logo {
@@ -150,13 +149,13 @@ nav {
 
 /* Hero Section */
 .hero {
-    max-width: 1200px;
-    margin: 0 auto 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 80px;
-    padding: 120px 40px 0 40px;
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 130px 40px 0 40px;
 }
 
 .hero-text {
