@@ -284,3 +284,30 @@ nav {
     opacity: 1;
     transform: translateY(0);
 }
+
+.experience-card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(96, 165, 250, 0.18);
+  border-radius: 18px;
+  padding: 28px;
+  margin: 30px 0;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(96, 165, 250, 0.45);
+  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.18);
+}
+
+.experience-card h3 {
+  color: #ffffff;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.experience-card h4 {
+  color: #60a5fa;
+  margin-top: 25px;
+}
