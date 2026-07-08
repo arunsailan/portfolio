@@ -508,72 +508,54 @@ nav {
 }
 
 .shield-logo {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90px;
-    height: 60px;
-    cursor: pointer;
+  width: 95px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.logo-text {
-    position: relative;
-    z-index: 3;
-    font-size: 28px;
-    font-weight: 800;
-    color: white;
-    letter-spacing: 2px;
-    transition: all 0.3s ease;
+.shield-svg {
+  width: 95px;
+  height: 70px;
+  overflow: visible;
 }
 
-.shield-half {
-    position: absolute;
-    width: 28px;
-    height: 42px;
-    border: 3px solid #60a5fa;
-    opacity: 0;
-    transition: all 0.35s ease;
+.shield-piece {
+  fill: rgba(96, 165, 250, 0.08);
+  stroke: #60a5fa;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  opacity: 0;
+  transition: all 0.4s ease;
+  filter: drop-shadow(0 0 6px rgba(96, 165, 250, 0.35));
 }
 
-.shield-left {
-    left: -25px;
-
-    border-right: none;
-
-    clip-path: polygon(
-        100% 0%,
-        25% 0%,
-        0% 50%,
-        25% 100%,
-        100% 100%
-    );
+.shield-left-piece {
+  transform: translateX(-28px);
 }
 
-.shield-right {
-    right: -25px;
-
-    border-left: none;
-
-    clip-path: polygon(
-        0% 0%,
-        75% 0%,
-        100% 50%,
-        75% 100%,
-        0% 100%
-    );
+.shield-right-piece {
+  transform: translateX(28px);
 }
 
-.shield-logo:hover .shield-left {
-    left: 4px;
-    opacity: 1;
+.shield-text {
+  fill: #e5e7eb;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
 }
 
-.shield-logo:hover .shield-right {
-    right: 4px;
-    opacity: 1;
+.shield-logo:hover .shield-left-piece,
+.shield-logo:hover .shield-right-piece {
+  transform: translateX(0);
+  opacity: 1;
 }
 
-.shield-logo:hover .logo-text {
-    text-shadow: 0 0 18px rgba(96,165,250,0.8);
+.shield-logo:hover .shield-text {
+  fill: #ffffff;
+  filter: drop-shadow(0 0 8px rgba(96, 165, 250, 0.8));
 }
