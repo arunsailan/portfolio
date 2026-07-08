@@ -8,7 +8,7 @@ body {
 
 header {
   text-align: center;
-  padding: 60px 20px;
+  padding: 120px 20px 60px;
   background: #111827;
 }
 
@@ -109,19 +109,21 @@ footer {
 /* Navigation */
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    background: rgba(15, 23, 42, 0.85);
-    backdrop-filter: blur(10px);
+  padding: 24px 90px;
+  box-sizing: border-box;
+
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
 }
 
 .logo {
