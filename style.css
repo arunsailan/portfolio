@@ -22,10 +22,6 @@ header p {
   color: #93c5fd;
 }
 
-nav {
-  margin-top: 25px;
-}
-
 nav a {
   color: #e5e7eb;
   text-decoration: none;
@@ -114,7 +110,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 1000;
-
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
