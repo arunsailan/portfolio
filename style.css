@@ -473,3 +473,75 @@ nav {
   color: inherit;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 18px 24px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 150px 20px 0 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 44px;
+  }
+
+  .hero-text h2 {
+    font-size: 22px;
+  }
+
+  .intro {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    width: 260px;
+  }
+
+  .photo-pulse {
+    right: 40px;
+    bottom: -12px;
+  }
+
+  main {
+    padding: 30px 16px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .project-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card,
+  .project-card,
+  .contact-card {
+    padding: 20px;
+  }
+
+  .skill-badges span,
+  .project-tags span {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+}
