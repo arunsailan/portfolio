@@ -258,7 +258,7 @@ nav {
 
 .photo-pulse {
   position: absolute;
-  bottom: -25px;
-  right: -25px;
+  bottom: -18px;
+  right: 95px;
   z-index: 1;
 }
