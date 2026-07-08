@@ -161,7 +161,7 @@ nav {
 }
 
 .hero-text h1 {
-    font-size: 72px;
+    font-size: 64px;
     margin: 10px 0;
 }
 
@@ -175,9 +175,20 @@ nav {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .hero-image img {
-    width: 400px;
+    width: 340px;
     border-radius: 30px;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.4),
+        0 0 40px rgba(96,165,250,0.15);
+
+    transition: all 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: translateY(-8px);
 }
