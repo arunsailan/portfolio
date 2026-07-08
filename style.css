@@ -312,20 +312,31 @@ nav {
   margin-top: 25px;
 }
 
+#skills h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
 .skill-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin: 15px 0 35px;
+  gap: 10px;
+  margin: 10px 0 20px;
 }
 
 .skill-badges span {
   background: #0f172a;
   color: #cbd5e1;
-  border: 1px solid rgba(96, 165, 250, 0.2);
+  border: 1px solid rgba(96, 165, 250, 0.15);
   padding: 10px 16px;
   border-radius: 999px;
   font-size: 14px;
   font-weight: 500;
-    display: inline-block;
+    transition: all 0.25s ease;
+}
+
+.skill-badges span:hover {
+    border-color: rgba(96,165,250,0.5);
+    color: white;
+    background: rgba(96,165,250,0.08);
 }
