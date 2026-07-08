@@ -315,16 +315,17 @@ nav {
 .skill-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 12px 0 28px;
+  gap: 12px;
+  margin: 15px 0 35px;
 }
 
 .skill-badges span {
   background: #0f172a;
   color: #cbd5e1;
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  padding: 8px 14px;
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  padding: 10px 16px;
   border-radius: 999px;
   font-size: 14px;
   font-weight: 500;
+    display: inline-block;
 }
