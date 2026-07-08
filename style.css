@@ -230,3 +230,37 @@ nav {
         opacity: 0;
     }
 }
+
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+  color: #e5e7eb;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  color: #60a5fa;
+  text-shadow: 0 0 18px rgba(96, 165, 250, 0.7);
+}
+
+.hero-image {
+  position: relative;
+}
+
+.photo-pulse {
+  position: absolute;
+  bottom: 18px;
+  right: 110px;
+  width: 38px;
+  height: 38px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 25px rgba(96, 165, 250, 0.35);
+}
