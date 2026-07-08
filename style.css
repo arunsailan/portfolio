@@ -115,6 +115,13 @@ nav {
     max-width: 1200px;
     margin: auto;
     padding: 20px 40px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(10px);
 }
 
 .logo {
