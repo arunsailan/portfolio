@@ -33,3 +33,35 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+const shieldLogo = document.querySelector(".shield-logo");
+
+document.addEventListener("mousemove", (e) => {
+    if (!shieldLogo) return;
+
+    const rect = shieldLogo.getBoundingClientRect();
+
+    const logoX = rect.left + rect.width / 2;
+    const logoY = rect.top + rect.height / 2;
+
+    const distance = Math.hypot(e.clientX - logoX, e.clientY - logoY);
+
+    const maxDistance = 260;
+    const minDistance = 40;
+
+    if (distance < maxDistance) {
+        shieldLogo.classList.add("active-shield");
+
+        const progress = Math.min(
+            Math.max((maxDistance - distance) / (maxDistance - minDistance), 0),
+            1
+        );
+
+        const shieldDistance = 28 - progress * 28;
+
+        shieldLogo.style.setProperty("--shield-distance", `${shieldDistance}px`);
+    } else {
+        shieldLogo.classList.remove("active-shield");
+        shieldLogo.style.setProperty("--shield-distance", "28px");
+    }
+});
