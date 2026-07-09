@@ -190,7 +190,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   gap: 80px;
-  padding: 130px 40px 0 40px;
+  padding: 170px 40px 40px 40px;
 }
 
 .hero-text {
@@ -198,8 +198,12 @@ nav {
 }
 
 .hello {
-    font-size: 24px;
-    color: #94a3b8;
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #8f9682;
+    margin-bottom: 15px;
+    font-weight: 500;
 }
 
 .hero-text h1 {
@@ -211,7 +215,7 @@ nav {
 }
 
 .hero-text h2 {
-    color: #60a5fa;
+    color: #b9c6a2;
     font-size: 32px;
     margin-bottom: 30px;
 }
