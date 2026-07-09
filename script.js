@@ -65,3 +65,21 @@ document.addEventListener("mousemove", (e) => {
         shieldLogo.style.setProperty("--shield-distance", "28px");
     }
 });
+
+const nameElement = document.getElementById("typed-name");
+
+const fullName = "Arun Sailan";
+
+let index = 0;
+
+function typeName() {
+    if (index < fullName.length) {
+        nameElement.textContent += fullName.charAt(index);
+        index++;
+        setTimeout(typeName, 140);
+    }
+}
+
+window.addEventListener("load", () => {
+    typeName();
+});
