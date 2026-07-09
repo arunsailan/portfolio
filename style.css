@@ -632,7 +632,8 @@ nav {
 
 .scroll-helper span {
   display: block;
-  margin-top: 8px;
+  margin-top: 4px;
+  margin-bottom: 35px;
   font-size: 18px;
   animation: bounceArrow 1.2s infinite;
 }
