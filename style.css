@@ -608,3 +608,14 @@ nav {
   fill: #ffffff;
   filter: drop-shadow(0 0 8px rgba(96, 165, 250, 0.8));
 }
+
+#typed-name::after {
+    content: "_";
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
