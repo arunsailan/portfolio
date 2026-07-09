@@ -3,36 +3,26 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   margin: 0;
+
   background:
-  radial-gradient(circle at 20% 20%, rgba(120, 150, 90, 0.18), transparent 35%),
-  radial-gradient(circle at 80% 30%, rgba(90, 120, 70, 0.15), transparent 30%),
-  linear-gradient(135deg, #10140d 0%, #1c2418 50%, #121610 100%);
-background-attachment: fixed;
+    linear-gradient(
+      180deg,
+      #081225 0%,
+      #0b1b2f 10%,
+      #10253a 20%,
+      #16313b 35%,
+      #1f3b36 50%,
+      #29442f 65%,
+      #344d30 82%,
+      #27351e 100%
+    );
+
+  background-attachment: fixed;
+
   color: #e5e7eb;
   line-height: 1.6;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background:
-    linear-gradient(120deg, rgba(132, 169, 140, 0.08), transparent, rgba(96, 165, 250, 0.05));
-  animation: backgroundShift 12s ease-in-out infinite alternate;
-  pointer-events: none;
-  z-index: -1;
-}
-
-@keyframes backgroundShift {
-  from {
-    transform: translateX(-3%) translateY(-2%);
-  }
-
-  to {
-    transform: translateX(3%) translateY(2%);
-  }
 }
 
 header {
