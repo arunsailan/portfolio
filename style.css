@@ -609,3 +609,50 @@ nav {
         opacity: 0;
     }
 }
+
+.scroll-helper {
+  margin-top: 40px;
+  text-align: center;
+  color: #b9c6a2;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 11px;
+  opacity: 0.85;
+  animation: floatHelper 2.5s ease-in-out infinite;
+}
+
+.pixel-bot {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #d8c3a5;
+}
+
+.scroll-helper p {
+  margin: 6px 0;
+}
+
+.scroll-helper span {
+  display: block;
+  margin-top: 8px;
+  font-size: 18px;
+  animation: bounceArrow 1.2s infinite;
+}
+
+@keyframes floatHelper {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes bounceArrow {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(6px);
+    opacity: 1;
+  }
+}
