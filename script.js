@@ -93,8 +93,8 @@ heroImage.addEventListener("mousemove", (e) => {
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
 
-    const moveX = (x - rect.width / 2) / 25;
-    const moveY = (y - rect.height / 2) / 25;
+    const moveX = (x - rect.width / 2) / 45;
+    const moveY = (y - rect.height / 2) / 45;
 
     heroImage.style.transform =
         `translate(${moveX}px, ${moveY - 8}px)`;
