@@ -83,3 +83,23 @@ function typeName() {
 window.addEventListener("load", () => {
     typeName();
 });
+
+const heroImage = document.querySelector(".hero-image");
+
+heroImage.addEventListener("mousemove", (e) => {
+
+    const rect = heroImage.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const moveX = (x - rect.width / 2) / 25;
+    const moveY = (y - rect.height / 2) / 25;
+
+    heroImage.style.transform =
+        `translate(${moveX}px, ${moveY - 8}px)`;
+});
+
+heroImage.addEventListener("mouseleave", () => {
+    heroImage.style.transform = "translate(0px, -8px)";
+});
