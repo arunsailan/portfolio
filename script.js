@@ -93,13 +93,27 @@ heroImage.addEventListener("mousemove", (e) => {
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
 
-    const moveX = (x - rect.width / 2) / 55;
-    const moveY = (y - rect.height / 2) / 55;
+    const rotateY = ((x - rect.width / 2) / rect.width) * 10;
+    const rotateX = -((y - rect.height / 2) / rect.height) * 10;
 
-    heroImage.style.transform =
-        `translate(${moveX}px, ${moveY - 8}px)`;
+    heroImage.style.transform = `
+        translateY(-8px)
+        perspective(1000px)
+        rotateX(${rotateX}deg)
+        rotateY(${rotateY}deg)
+        scale(1.02)
+    `;
+
 });
 
 heroImage.addEventListener("mouseleave", () => {
-    heroImage.style.transform = "translate(0px, -8px)";
+
+    heroImage.style.transform = `
+        translateY(0)
+        perspective(1000px)
+        rotateX(0deg)
+        rotateY(0deg)
+        scale(1)
+    `;
+
 });
