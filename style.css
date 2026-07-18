@@ -184,6 +184,9 @@ nav {
 
 /* Hero Section */
 .hero {
+  position: relative;
+  overflow: hidden;
+
   max-width: 1200px;
   margin: 0 auto 80px;
   display: flex;
@@ -191,6 +194,21 @@ nav {
   justify-content: space-between;
   gap: 80px;
   padding: 170px 40px 40px 40px;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+
+    background:
+      radial-gradient(
+        circle at 72% 35%,
+        rgba(255,255,255,.04) 0%,
+        rgba(185,198,162,.03) 25%,
+        transparent 60%
+      );
 }
 
 .hero-text {
@@ -240,8 +258,10 @@ nav {
     z-index: 2;
 }
 
-.hero-image img:hover {
-    transform: translateY(-8px);
+.hero-image {
+    transform-style: preserve-3d;
+    transition: transform .35s cubic-bezier(.22,.61,.36,1);
+    will-change: transform;
 }
 
 .logo-container {
@@ -666,5 +686,7 @@ nav {
 }
 
 .hero-image {
-    transition: transform 0.2s ease-out;
+    transform-style: preserve-3d;
+    transition: transform .35s cubic-bezier(.22,.61,.36,1);
+    will-change: transform;
 }
