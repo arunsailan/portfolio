@@ -664,3 +664,7 @@ nav {
   z-index: 5;
   box-shadow: 0 35px 90px rgba(0, 0, 0, 0.45);
 }
+
+.hero-image {
+    transition: transform 0.2s ease-out;
+}
